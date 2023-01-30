@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CRUD Example</string>
+    <string name="Users">Users</string>
+    <string name="view_user">View User</string>
+    <string name="fab_edituser_tittle">Edit</string>
+    <string name="tittleName">Name:</string>
+    <string name="tittleBirthdate">BirthDate:</string>
+    <string name="fab_deleteuser_tittle">Delete</string>
+    <string name="fab_createuser_tittle">New</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fab_saveuser_tittle">Save</string>
+    <string name="fab_canceluser_tittle">Cancel</string>
+    <string name="edit_user">Edit User</string>
+    <string name="hint_username">UserName</string>
+    <string name="hint_birthdate">BirthDate</string>
+</resources>

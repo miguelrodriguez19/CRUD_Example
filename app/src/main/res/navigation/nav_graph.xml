@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/allUsersFragment">
+
+    <fragment
+        android:id="@+id/allUsersFragment"
+        android:name="com.utad.crudexample.AllUsersFragment"
+        android:label="fragment_all_users"
+        tools:layout="@layout/fragment_all_users" >
+        <action
+            android:id="@+id/action_allUsersFragment_to_detailUserFragment"
+            app:destination="@id/detailUserFragment" />
+        <action
+            android:id="@+id/action_allUsersFragment_to_editUsersFragment"
+            app:destination="@id/editUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailUserFragment"
+        android:name="com.utad.crudexample.DetailUserFragment"
+        android:label="fragment_detail_user"
+        tools:layout="@layout/fragment_detail_user" >
+        <argument
+            android:name="user"
+            app:argType="com.utad.crudexample.users.UsersResponse$User" />
+        <action
+            android:id="@+id/action_detailUserFragment_to_editUsersFragment"
+            app:destination="@id/editUsersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editUsersFragment"
+        android:name="com.utad.crudexample.EditUsersFragment"
+        android:label="fragment_edit_users"
+        tools:layout="@layout/fragment_edit_users" >
+        <argument
+            android:name="user"
+            app:argType="com.utad.crudexample.users.UsersResponse$User" />
+    </fragment>
+</navigation>

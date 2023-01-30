@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".DetailUserFragment">
+
+    <TextView
+        android:id="@+id/tvTittle"
+        style="@style/TextAppearance.Material3.TitleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/view_user"
+        android:textAlignment="center" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/tvTittle"
+        android:layout_marginTop="6dp"
+        android:background="@color/purple_500"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separator"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tittleName" />
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:text="UserName" />
+
+        <TextView
+            android:id="@+id/tvBirthDate"
+            style="@style/TextAppearance.Material3.TitleMedium"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/tittleBirthdate" />
+
+        <TextView
+            android:id="@+id/tvUserBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:text="BirthDate" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabEditUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/purple_500"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        android:text="@string/fab_edituser_tittle"
+        app:icon="@drawable/ic_baseline_edit_24"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabDeleteUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/red"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
+        android:text="@string/fab_deleteuser_tittle"
+        app:icon="@drawable/ic_baseline_delete_forever_24"/>
+</RelativeLayout>
